@@ -1,0 +1,6 @@
+section#pagina1{
+    background-image: url("../img/img_sistemas.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 2rem;
+}

@@ -1,0 +1,246 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+header{
+    background-color: #1f1e1e;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+header > img{
+    width: 3rem;
+    margin: 0.15rem 0;
+}
+
+#primeira{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    color: white;
+    margin: 3rem 0;
+    font-family: "Montserrat";
+    font-weight: "bold";
+}
+
+#primeira > div{
+    width: 100%;
+    display: flex;
+    justify-content: center; /*da espaço igual em todos os elementos*/ 
+    margin-bottom: 3rem;
+}
+
+#primeira > div > .container-link:first-child{
+    margin-right: 3rem;
+}
+
+#primeira .container-link{
+    height: 19rem;
+    position: relative;
+    display: flex;
+
+}
+
+#primeira .link{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #14141594;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#primeira .link a{
+    color: white;
+    font-weight: 700;
+    font-family: "montserrat";
+    font-size: 2rem;
+    text-decoration: none;
+    text-align: center;
+    padding: 0 1rem;
+}
+
+#primeira .container-link img{
+    position: relative;
+}
+
+body{
+    background-color: #353535;
+    width: 100%;
+}
+
+.pagina{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+
+section#pagina1{
+    background-image: url("../img/background_cpu.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+section#pagina2{
+    background-image: url("../img/background_linguagens.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 4rem;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+    background-color: red;
+}
+
+.linguagens{
+    margin-top: 8rem;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+
+.video2 iframe{
+    width: 26rem;
+    height: 18rem;
+    background-color: red;
+}
+.pclass2{
+    margin-left: 15rem;
+    width: 17rem;
+    background-color: #14141594;
+    color: rgb(218, 210, 210);
+    font-family: "monserrat";
+    font-weight: 700;
+    padding: 1.5rem;
+    border-radius: 1rem;
+}
+
+.pclass{
+    margin-left: 15rem;
+    width: 17rem;
+    background-color: #15141494;
+    color: rgb(218, 210, 210);
+    font-family: "monserrat";
+    font-weight: 700;
+    padding: 1.5rem;
+    border-radius: 1rem;
+}
+
+footer{
+    width: 100%;
+    background-color: #1f1e1e;
+    padding: 2rem;
+}
+
+.table td, th, tr{
+    font-family: "monserrat";
+    font-weight: 700;
+    color: white;
+    border: 1px solid white;
+}
+
+.table{
+    margin-top: 1.5rem;
+}
+
+@media only screen and (max-width:1125px){
+    .response{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    #primeira .container-link{
+        height: 20rem;
+        width: 60%;
+    }
+    #primeira .container-link img{
+        height: 20rem;
+        width: 100%;
+        object-fit: cover;
+    }
+    #primeira > div > .container-link:first-child{
+        margin-right: 0rem;
+        margin-bottom: 3rem;
+    }
+    h1{
+        max-width: 80%;
+        font-size: 2rem;
+        text-align: center;
+    }
+    .pagina, .linguagens{
+        flex-direction: column;
+    }
+    .pclass, .pclass2{
+        margin-left: 0;
+        margin-top: 2rem;
+    }
+
+}
+
+@media only screen and (max-width:855px){
+    h1{
+        font-size: 1.2rem;
+        max-width: 80%;
+    }
+    #primeira .container-link{
+        height: 40%;
+        width: 80%;
+    }
+    #primeira .container-link img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    #primeira .link a{
+        color: white;
+        font-weight: 700;
+        font-family: "montserrat";
+        font-size: 0.9rem;
+        text-decoration: none;
+        text-align: center;
+        padding: 0 1rem;
+    }
+
+    .video2 iframe{
+        width: 80%;
+        height: 40%;
+    }
+
+    .video2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .table{
+        width: 80%;
+    }
+    
+    .pclass2{
+        margin-bottom: 2rem;
+    }
+
+@media only screen and (max-width:409px){
+    h1{
+        font-size: 0.9rem;
+        max-width: 80%;
+     }
+   }
+}  

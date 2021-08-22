@@ -1,0 +1,6 @@
+section#pagina1{
+    background-image: url("../img/img_redes.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 2rem;
+}
